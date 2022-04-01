@@ -544,6 +544,14 @@ ul {
   padding: 0;
 }
 
+*:focus,
+*:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #011c40, 0 0 0 3px #ffffff;
+  box-shadow: 0 0 0 2px #011c40, 0 0 0 3px #ffffff;
+  border-radius: 2px;
+}
+
 .wrapper {
   position: relative;
   display: -webkit-box;
@@ -1586,13 +1594,11 @@ ul {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .container {
     padding: 0 45px;
   }
-}
 
-@media (max-width: 1023px) {
   .page-header {
     padding-top: 30px;
   }
