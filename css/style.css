@@ -638,8 +638,8 @@ ul {
 .container--header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 375px 1fr 220px;
-  grid-template-columns: 375px 1fr 220px;
+  -ms-grid-columns: 30.7% 1fr 220px;
+  grid-template-columns: 30.7% 1fr 220px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -670,7 +670,9 @@ ul {
   position: relative;
 }
 
-.header__logo {
+.header__picture {
+  display: block;
+  width: 215px;
   margin-right: 42.7%;
 }
 
@@ -758,7 +760,7 @@ ul {
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
-  margin-right: 160px;
+  margin-right: 13.1%;
 }
 
 .footer__logo {
@@ -834,7 +836,7 @@ ul {
 }
 
 .footer__nav-item {
-  width: 220px;
+  width: 95%;
   margin-bottom: 9px;
 }
 
@@ -882,7 +884,7 @@ ul {
 }
 
 .main-screen h1 {
-  margin: 0 0 32px 125px;
+  margin: 0 0 32px 10.3%;
   font-family: "Roboto Condensed Bold", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-size: 80px;
@@ -893,9 +895,20 @@ ul {
   text-transform: uppercase;
 }
 
+.main-screen a p {
+  margin: 0 0 0 0;
+  font-family: "Roboto Condensed Bold", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #f2f5f6;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .main-screen p {
-  width: 685px;
-  margin: 0 0 47px 125px;
+  margin: 0 33.6% 47px 10.2%;
   font-family: "PT Mono Regular", "Courier New", "Courier", monospace;
   font-style: normal;
   font-size: 22px;
@@ -916,18 +929,6 @@ ul {
   user-select: none;
   background-color: #00b2ff;
   border-radius: 3px;
-}
-
-.main-screen a p {
-  margin: 0;
-  font-family: "Roboto Condensed Bold", "Arial", "Helvetica", sans-serif;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #f2f5f6;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
 .main-screen a span {
@@ -1071,10 +1072,14 @@ ul {
 
 .about-company__inner-wrapper.is-close {
   display: none;
+  width: 1px;
+  height: 1px;
 }
 
 .about-company__inner-wrapper.is-open {
   display: block;
+  width: auto;
+  height: auto;
 }
 
 .about-company h2 {
@@ -1161,6 +1166,8 @@ ul {
 
 .catalog h3 {
   display: none;
+  width: 1px;
+  height: 1px;
 }
 
 .catalog__list {
@@ -1259,7 +1266,7 @@ ul {
 
 .popup__overlay {
   width: 100%;
-  height: 200vh;
+  height: calc(100vh + 500px);
   padding-top: 146px;
   background-color: rgba(3, 16, 27, 0.7);
 }
@@ -1268,6 +1275,24 @@ ul {
   height: auto;
   padding-top: 40px;
   background-color: rgba(255, 255, 255, 0);
+}
+
+.popup__wrapper {
+  width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 129px;
+  overflow-y: auto;
+}
+
+.popup__inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 .popup form {
@@ -1287,7 +1312,7 @@ ul {
   display: block;
   width: 40px;
   height: 40px;
-  background-image: url("../../img/sprite/icon-close.svg");
+  background-image: url("../img/sprite/icon-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #00b2ff;
@@ -1538,6 +1563,13 @@ ul {
   display: flex;
   width: 100%;
   margin-bottom: 20px;
+}
+
+.feedback__inner-wrapper--clickable {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .feedback__inner-wrapper .feedback__form-input {
@@ -2279,6 +2311,10 @@ ul {
     line-height: 43px;
   }
 
+  .main-screen a p {
+    display: none;
+  }
+
   .main-screen p {
     margin: 0 0 45px -1px;
     font-size: 14px;
@@ -2290,10 +2326,6 @@ ul {
     max-width: 270px;
     margin-left: 0;
     padding: 13px 13px 12px 37px;
-  }
-
-  .main-screen a p {
-    display: none;
   }
 
   .main-screen a span {
@@ -2456,10 +2488,14 @@ ul {
 
   .catalog h2 {
     display: none;
+    width: 1px;
+    height: 1px;
   }
 
   .catalog h3 {
     display: block;
+    width: auto;
+    height: auto;
     margin-top: 0;
     margin-bottom: 30px;
     font-family: "Roboto Condensed Regular", "Arial", "Helvetica", sans-serif;
