@@ -2147,10 +2147,6 @@ ul {
     margin-right: 0;
   }
 
-  .header__contacts-item:nth-of-type(even) a {
-    padding-left: 40px;
-  }
-
   .footer {
     padding-top: 0;
     padding-bottom: 35px;
